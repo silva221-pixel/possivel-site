@@ -1,0 +1,160 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* conf geral */
+body {
+    font-family: sans-serif;
+    color: #333;
+    background: #fff;
+}
+
+/* capa do site */
+.hero {
+    background: #b11226;
+    color: #fff;
+    min-height: 80vh; /* Altura da seção */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8%;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px; /* Espaço entre texto e foto */
+}
+
+/* Lado do Texto */
+.hero-text {
+    flex: 1;
+    text-align: left; /* Garante texto à esquerda */
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0 30px;
+}
+
+/* Lado da Imagem */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px; /* Ajuste o tamanho da foto aqui */
+    height: auto;
+    border-radius: 20px; /* Bordas arredondadas como na imagem */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3); /* Sombra para dar profundidade */
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column; /* No celular, a foto fica embaixo do texto */
+        text-align: center;
+    }
+    .hero-text {
+        text-align: center;
+    }
+}
+/* botoes */
+.btn {
+    background: #fff;
+    color: #b11226;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 5px;
+    font-weight: 500;
+}
+.btn-outline {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+/*seçoes gerais*/
+section {
+    padding: 70px 8%;
+    text-align: center;
+}
+h2 {
+    font-family: playfair display, serif;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+.sub {
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+/*cardapio*/
+h3 {
+    margin: 40px 0 20px;
+    color: #b11226;
+}
+ 
+/*produtos*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+.card {
+    background: #f9f9f9;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+/*imagems dos produtos*/
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*nome dos produtos*/
+.card h4 {
+    margin: 15px 0 5px;
+}
+
+/* botao pq dentro do card*/
+.btn-small {
+    display: inline-block;
+    margin-top: 10px;
+    background: #b11226;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/*como pedir*/
+.como-pedir {
+    list-style-position: inside;
+    margin: 20px 0;
+}
+
+/*rodape*/
+.footer {
+    background: #111;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+}
